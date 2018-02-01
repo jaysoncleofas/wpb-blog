@@ -6,10 +6,10 @@
           <?php while (have_posts()) : the_post(); ?>
             <?php get_template_part('content'); ?>
           <?php endwhile; ?>
+          <hr>
         <?php else : ?>
-          <p><?php __('No Posts Found!'); ?></p>
+          <p><?php echo "<i>No Posts Found!</i>"; ?></p>
         <?php endif; ?>
-        <hr>
         <?php comments_template(); ?>
       </div><!-- /.blog-main -->
 <?php get_footer(); ?>

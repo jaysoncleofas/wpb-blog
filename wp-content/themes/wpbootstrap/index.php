@@ -7,7 +7,7 @@
             <?php get_template_part('content', get_post_format()); ?>
           <?php endwhile; ?>
         <?php else : ?>
-          <p><?php __('No Posts Found!'); ?></p>
+          <p><?php echo "<i>No Posts Found!</i>"; ?></p>
         <?php endif; ?>
       </div><!-- /.blog-main -->
 <?php get_footer(); ?>

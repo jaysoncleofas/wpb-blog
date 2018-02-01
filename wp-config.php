@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wpblog');
+define('DB_NAME', 'wpblog2');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'E=B?BF$BF&>U;D#OM?);*6DfG+/!.I|B~*gMm$4& ,!U],3&nDS(R0z44=! y^~B');
-define('SECURE_AUTH_KEY',  '&rM+Z2-k%5@XXjwpw&U2y;ql:U_x^E)U-@h,Rg1tQ@52Ew+6f;/ZV^#]3P-$R4#v');
-define('LOGGED_IN_KEY',    '*!h^(TJ!/TYv{K^FRL:(xx+`TY~$V0aUrAhr<#m[Jplb?yd?U.i!Irvym3@qa*.Y');
-define('NONCE_KEY',        '9FtRrmyh+k%A%.,3*3P1eSD OS*zKd26/8-vn6p^0Cy=bq>BGPdF;*m@^=;=1A&u');
-define('AUTH_SALT',        'NQA*9w2&AJ Q(MAEP{,EtuffXeowY7}2W!v`a*^<Re>=,(k=^t,U;:1k!?#)Hhz@');
+define('AUTH_KEY', 'E=B?BF$BF&>U;D#OM?);*6DfG+/!.I|B~*gMm$4& ,!U],3&nDS(R0z44=! y^~B');
+define('SECURE_AUTH_KEY', '&rM+Z2-k%5@XXjwpw&U2y;ql:U_x^E)U-@h,Rg1tQ@52Ew+6f;/ZV^#]3P-$R4#v');
+define('LOGGED_IN_KEY', '*!h^(TJ!/TYv{K^FRL:(xx+`TY~$V0aUrAhr<#m[Jplb?yd?U.i!Irvym3@qa*.Y');
+define('NONCE_KEY', '9FtRrmyh+k%A%.,3*3P1eSD OS*zKd26/8-vn6p^0Cy=bq>BGPdF;*m@^=;=1A&u');
+define('AUTH_SALT', 'NQA*9w2&AJ Q(MAEP{,EtuffXeowY7}2W!v`a*^<Re>=,(k=^t,U;:1k!?#)Hhz@');
 define('SECURE_AUTH_SALT', 'O4X_V|I7 MImv-@XoB3%YoBdLh<C&I+$}YB<tXQxClZ,(xK~Dd!AY8p>G6(%Kq>A');
-define('LOGGED_IN_SALT',   '`8>J!GQbOF<0uL;3zy$Q@C0HYv8Z{L7*;hYXo]kDHnt$f&TA<5u:844gtuY9EE?0');
-define('NONCE_SALT',       '(mN:yG(]jCh-$K*?KsXNcbqFY_oG6<A:DVyWRkv A0%|2q;2$BbLnd5&k<eBX&Oc');
+define('LOGGED_IN_SALT', '`8>J!GQbOF<0uL;3zy$Q@C0HYv8Z{L7*;hYXo]kDHnt$f&TA<5u:844gtuY9EE?0');
+define('NONCE_SALT', '(mN:yG(]jCh-$K*?KsXNcbqFY_oG6<A:DVyWRkv A0%|2q;2$BbLnd5&k<eBX&Oc');
 
 /**#@-*/
 
@@ -82,8 +82,9 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if (!defined('ABSPATH')) {
+    define('ABSPATH', dirname(__FILE__) . '/');
+}
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

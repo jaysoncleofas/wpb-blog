@@ -16,7 +16,7 @@
               </div><!-- /.blog-post -->
             <?php endwhile; ?>
           <?php else : ?>
-            <p><?php __('No Page Found!'); ?></p>
+            <p><?php echo "<i>No Posts Found!</i>"; ?></p>
           <?php endif; ?>
 
         </div><!-- /.blog-main -->

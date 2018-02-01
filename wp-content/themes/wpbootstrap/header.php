@@ -17,6 +17,12 @@
     <link href="<?php bloginfo('stylesheet_url')?>" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php wp_head(); ?>
+    <style>
+      .showcase {
+        background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+
+      }
+    </style>
   </head>
 
   <body>

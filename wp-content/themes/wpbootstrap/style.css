@@ -170,6 +170,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #6c757d !important;
 }
 
+.cat-navbar{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .cat-navbar li a{
   color: #6c757d !important;
 }
